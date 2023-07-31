@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AdminRoutes from './components/admin/admin_routes';
+import HrRoutes from './components/hr/hr_routes';
+import ManagerRoutes from './components/manager/manager_routes';
+import UserRoutes from './components/user/user_routes';
+import AuthRoutes from './components/auth/auth_routes';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthRoutes />
+      <AdminRoutes />
+      <HrRoutes />
+      <ManagerRoutes />
+      <UserRoutes />
+    </>
   );
 }
 
